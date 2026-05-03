@@ -1,0 +1,71 @@
+body {
+    font-family: "Times New Roman", serif;
+    margin: 0;
+    background: #fff9f4;
+    color: #005f73;
+    text-align: center;
+}
+
+header {
+    background: #ee9b00;
+    color: #fff9f4;
+    padding: 1.5rem 1rem;
+}
+
+header h1 {
+    font-family: 'Agbalumo', cursive;
+    font-size: 2.5rem;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+main {
+    padding: 30px 20px;
+}
+
+#destination {
+    max-width: 700px;
+    margin: auto;
+}
+
+#placeName {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #0a9396;
+}
+
+img{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    margin: 20px 0;
+}
+
+#description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    padding:0 10px;
+}
+
+button {
+    background: #ee9b00;
+    color: #fff9f4;
+    padding: 12px 24px;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+footer {
+    padding: 15px;;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
