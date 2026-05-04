@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import './index.css'
 import Navbar from './components/Navbar'
 import ExplorePage from './components/ExplorePage'
 import DestinationDetail from './components/DestinationDetail'
@@ -15,27 +14,24 @@ function App() {
 
   const navigate = (page) => setCurrentPage(page)
 
-  const handleSave = (destination) => {
-    const alreadySaved = saved.find((d) => d.name === destination.name)
-    if (!alreadySaved) setSaved([...saved, destination])
+  const handleSave = (dest) => {
+    if (!saved.find((d) => d.name === dest.name)) {
+      setSaved([...saved, dest])
+    }
   }
 
-  const handleRemoveSaved = (name) => {
-    setSaved(saved.filter((d) => d.name !== name))
-  }
+  const handleRemoveSaved = (name) => setSaved(saved.filter((d) => d.name !== name))
 
   const handleAddJournal = (entry) => {
     setJournal([...journal, entry])
     navigate('journal')
   }
 
-  const handleDeleteJournal = (index) => {
-    setJournal(journal.filter((_, i) => i !== index))
-  }
+  const handleDeleteJournal = (index) => setJournal(journal.filter((_, i) => i !== index))
 
-  const handleMoveToJournal = (destination) => {
-    handleRemoveSaved(destination.name)
-    setSelectedDestination(destination)
+  const handleMoveToJournal = (dest) => {
+    handleRemoveSaved(dest.name)
+    setSelectedDestination(dest)
     navigate('journal-add')
   }
 
