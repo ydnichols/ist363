@@ -141,4 +141,91 @@
   </main>
 
 </body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roam &amp; Recall – Destination Detail</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+ 
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-logo">Roam <span>&amp;</span> Recall</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Explore</a></li>
+      <li><a href="saved.html" class="nav-link">Saved</a></li>
+      <li><a href="journal.html" class="nav-link">Journal</a></li>
+    </ul>
+    <div class="nav-avatar">
+      <div class="avatar-circle">YN</div>
+    </div>
+  </nav>
+ 
+  <!-- MAIN CONTENT -->
+  <main class="page-section detail-page">
+ 
+    <a href="index.html" class="back-link">← Back</a>
+ 
+    <div class="detail-layout">
+ 
+      <!-- Left: Main Image -->
+      <div class="detail-main-img">
+        <div class="dest-img-placeholder large">
+          <span class="img-label">destination image</span>
+        </div>
+      </div>
+ 
+      <!-- Right: Info -->
+      <div class="detail-content">
+        <h2 class="detail-title">Bali, Indonesia</h2>
+        <p class="detail-location">📍 Bali, Indonesia</p>
+        <p class="detail-body">
+          Nestled in the heart of the Indonesian archipelago, Bali is a world apart — where ancient Hindu temples rise above terraced rice paddies, ceremonies spill into the streets, and the ocean whispers at every turn. Whether you come for surf, spirit, or solitude, the Island of the Gods leaves its mark.
+        </p>
+ 
+        <div class="highlights-block">
+          <h4 class="highlights-title">Highlights</h4>
+          <ul class="highlights-list">
+            <li>Explore the sacred Monkey Forest in Ubud</li>
+            <li>Watch sunrise from the rim of Mount Batur</li>
+            <li>Visit the clifftop Uluwatu Temple at dusk</li>
+          </ul>
+        </div>
+ 
+        <!-- Thumbnail Row -->
+        <div class="detail-thumb-row">
+          <div class="thumb-placeholder"></div>
+          <div class="thumb-placeholder"></div>
+          <div class="thumb-placeholder"></div>
+        </div>
+
+        <!-- Actions -->
+        <div class="detail-actions">
+          <button class="btn-save-detail">♡ Save</button>
+          <a href="journal-add.html" class="btn-journal-detail">Add to Journal</a>
+        </div>
+      </div>
+ 
+    </div>
+ 
+    <!-- Move to Journal Modal (hidden by default, toggled via JS later) -->
+    <div class="modal-overlay" id="moveModal" style="display: none;">
+      <div class="modal-card">
+        <div class="modal-icon">✓</div>
+        <h2 class="modal-title">Move to Journal?</h2>
+        <p class="modal-body">This will move Bali, Indonesia to your travel journal.</p>
+        <div class="modal-actions">
+          <button class="btn-cancel" onclick="document.getElementById('moveModal').style.display='none'">Cancel</button>
+          <a href="journal.html" class="btn-move">Move</a>
+        </div>
+      </div>
+    </div>
+ 
+  </main>
+ 
+</body>
 </html>
